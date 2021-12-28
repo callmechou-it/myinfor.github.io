@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+:root{
+    --primary-color:rgb(218, 78, 78);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(15, 187, 43), rgb(31, 135, 143));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.card {
+    height: 333px;
+    width: 250px;
+    background: rgb(37, 37, 37);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center; /*de anh luc nao cung o giua*/    
+}
+.card__img{
+    width: 120px;
+    height: 120px;
+    border: solid 3px var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden; /*cho phan anh tran ra ngoai vong tron, se bi cat di*/
+    margin: 0 auto;
+    transform: translateY(25px);
+    transition: 0.2s;
+}
+.card__img:hover{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-radius: unset;
+    margin: 0px auto;
+    transform: unset;
+}
+.card h2 {
+    margin-top: 25px;    
+}
+.card p {
+    color: var(--primary-color);
+}
+.card__socials {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+.card__socials a {
+    color: #fff;
+    text-decoration: none;
+}
+.card__socials a:hover{
+    color: var(--primary-color);
+}
+.card button {
+    width: 100px;
+    height: 34px;
+    color: #fff;
+    border: solid 2px var(--primary-color);
+    border-radius: 8px;
+    background: transparent;
+    transition: 0.2s;
+}
+.card button:hover {
+    cursor: pointer;
+    background: var(--primary-color);
+}
